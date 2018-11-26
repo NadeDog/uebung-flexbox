@@ -28,6 +28,9 @@ section{
 	width:  100%;
 	padding: 1rem 0;
 	min-height: 300px;
+	display: flex;
+	justify-content: space-between; /* x-Achse*/
+	align-items: stretch;	/* y-Achse*/
 
 }
 
@@ -35,6 +38,10 @@ section{
 .col{
 	width: 50px;
 	min-height: 50px;
+	flex-grow: 1; /* kann das element wachsen? nur 0 oder 1 möglich*/
+	flex-shrink: 1; /* kann das element schrumpfen? nur 0 oder 1 möglich*/
+	flex-basis: auto;
+	flex: 1 1 auto; /*kurzschreibweise für flex-grow, flex-shrink, flex-basis*/
 
 }
 
@@ -44,8 +51,56 @@ section{
 
 .sea-green{
 	background: #2D93AD;
+	order:-1
 }
 
 .middle-red{
 	background: #DE8F6E;
+	order:-2;
+}
+
+.black{
+	background: #000;
+}
+
+.yellow{
+	background: yellow;
+}
+
+.red{
+	background: red;
+}
+
+#einhorn{
+	display: none;
+}
+/* Media Query ab 1024px */
+@media (min-width: 64em) {
+	.row.quer{
+		flex-direction: column;
+		align-items: stretch;
+		justify-content: center;
+		position: relative;
+	}
+
+	.col-xl{
+		flex: 1 1 100%;
+		width: 100%;
+	}
+
+	.yellow{
+		order: 1;
+	}
+
+	#einhorn{
+		display: block;
+		position: absolute;
+		top:50%;
+		left:50%;
+		transform: translateX(-50%) translateY(-50%);
+
+		height: 100px;
+	}
+
+
 }
