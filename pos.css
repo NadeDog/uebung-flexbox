@@ -36,12 +36,9 @@ section{
 
 .col{
 	width: 100%;
+	min-width: 20px;
 	min-height: 50px;
-
-
 	margin: 10px;
-
-
 }
 
 .trolley-grey{
@@ -68,28 +65,4 @@ section{
 
 .olive{
 	background: olive;
-}
-
-/* für tablets */
-@media (min-width: 768px) and (max-width: 1023px){
-	.row{
-		display: flex;
-		flex-wrap: wrap;
-	}
-
-	.col{
-		flex: 1 1 calc(50% - 20px);
-	}
-}
-
-/* für desktop */
-@media (min-width: 1024px) {
-	.row{
-		display: flex;
-		flex-wrap: wrap;
-	}
-
-	.col{
-		flex: 1 1 calc(33.33333% - 20px);
-	}
 }
