@@ -26,27 +26,38 @@ section{
 
 .row{
 	width:  100%;
+	min-sidth: 10px;
 	padding: 1rem 0;
 	min-height: 300px;
 	display: block;
+}
 
-
+.flex-container{
+	display: flex;
+	flex-direction: row; /*default Einstellung */
+	justify-content: center; /* x-achse */
+	align-items:center;
 }
 
 
 .col{
-	width: 100%;
+	/* width: 100%; */
 	min-width: 20px;
-	min-height: 50px;
+	min-height: 70px;
 	margin: 10px;
+	flex-grow: 1;
+
 }
 
 .trolley-grey{
 	background: #7D7C84;
+	order: 6;
+
 }
 
 .sea-green{
 	background: #2D93AD;
+
 
 }
 
@@ -61,6 +72,8 @@ section{
 
 .orange{
 	background: orange;
+	order: 5;
+
 }
 
 .olive{
