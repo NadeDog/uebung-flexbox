@@ -34,7 +34,7 @@ section{
 
 
 .col{
-	
+
 	min-width: 20px;
 	min-height: 70px;
 	margin: 10px;
@@ -44,31 +44,62 @@ section{
 
 .trolley-grey{
 	background: #7D7C84;
-
+	flex-grow: 1;
+	order: 1;
 
 }
 
 .sea-green{
 	background: #2D93AD;
+	flex-grow: 1;
 
 
 }
 
 .middle-red{
 	background: #DE8F6E;
+	flex-grow: 1;
 
 }
 
 .black{
 	background: #000;
+	flex-grow: 1;
 }
 
 .orange{
 	background: orange;
-	order: 5;
+flex-grow: 1;
 
 }
 
 .olive{
 	background: olive;
+	flex-grow: 1;
+}
+
+.flex{
+
+	background: purple;
+	display: flex;
+	justify-content: space-between;
+	align-items: stretch;
+}
+
+#werner{
+	background: red;
+	height: 400px;
+	display: none;
+	justify-content: space-between;
+	align-items: center;
+}
+
+#susi{
+	background: blue;
+	flex-grow: 2;
+}
+
+#peter{
+	background: white;
+	flex-grow: 1;
 }
