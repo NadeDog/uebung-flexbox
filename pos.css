@@ -15,13 +15,11 @@ h1 {
 }
 
 section {
-
 	border-bottom: 1px solid #000;
 }
 
 .wrapper {
 	max-width: 600px;
-	margin: 0 auto;
 	min-height: 300px;
 }
 
@@ -30,7 +28,6 @@ section {
 	min-width: 10px;
 	padding: 1rem 0;
 	min-height: 300px;
-	display: block;
 }
 
 
