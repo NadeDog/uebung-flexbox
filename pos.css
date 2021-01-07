@@ -33,7 +33,7 @@ section {
 
 .col {
   min-width: 20px;
-  min-height: 200px;
+  min-height: 20px;
   margin: 10px;
 }
 
